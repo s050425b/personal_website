@@ -296,16 +296,13 @@ a{
     }
 
     #top #topRight #top-know{
-        top: 70%;
+        position: initial;
     }
 
     #topRight #top-info h2{
         font-size: 20px;
     }
 
-    #more-info .info-container{
-        width:100%;
-    }
 
 
     .info span{
