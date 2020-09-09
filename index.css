@@ -134,14 +134,15 @@ a{
                 background-color: rgb(233, 198, 3);
             }
 
-    #top #topRight #top-know{
-        position: relative;
-        top: 125px;
-        display:flex;
-        align-items: center;
-        cursor: pointer;
 
-    }
+            #top #topRight #top-know{
+                position: absolute;
+                top: 90%;
+                bottom: 0px;
+                display:flex;
+                align-items: center;
+                cursor: pointer;
+            }
 
         #top #topRight  #top-know img{
             width:30px;
@@ -159,7 +160,7 @@ a{
 #topLeft{
     display:flex;
     align-items: center;
-    width:250px;
+    width: 15%;
     margin:0 auto;
 
 }
@@ -203,7 +204,8 @@ a{
 
 .project{
     display:flex;
-    height:800px;
+    /*height:800px;*/
+    padding: 10% 0;
     width:100%;
 }
 
@@ -226,6 +228,7 @@ a{
 
 .description{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -280,4 +283,56 @@ a{
 }
 .red{
     background:rgb(241, 180, 87);
+}
+
+@media only screen and (max-width: 870px){
+    body{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    #top-title h2{
+        font-size:35px;
+    }
+
+    #topRight #top-info h2{
+        font-size: 20px;
+    }
+
+    #topLeft{
+        display:none;
+    }
+
+    #topRight{
+        width:100%;
+    }
+
+    .project{
+        flex-direction: column;
+    }
+
+    .image{
+        width:100%;
+    }
+
+    .description{
+        width:100%;
+        margin-top:8%;
+    }
+
+    .description span{
+        text-align: center;
+    }
+
+    .description ul li{
+        line-height: 30px;
+        margin-top: 5%;
+    }
+
+    #project2-img{
+        margin: 5% auto;
+    }
+
+    #project2-img img{
+        width:100%;
+    }
 }
