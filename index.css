@@ -86,6 +86,7 @@ a{
     justify-content: center;
     width:50%;
     height: 800px;
+    background:green;
 }
     #topRight #top-title{
 
@@ -162,7 +163,7 @@ a{
          align-items: center;
          width: 15%;
          margin:0 auto;
-            
+        
      }
             
     #topLeft img{
@@ -316,6 +317,7 @@ a{
     #topRight{
         position: initial;
         width:100%;
+        background:red;
     }
 
     .project{
